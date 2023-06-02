@@ -1,0 +1,117 @@
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: rgb(99, 121, 247);
+    margin: 0px;
+}
+.navLenke{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: grid;
+    /*for å sentrere teksten i lenkeelementet*/
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border-right: 4px solid rgb(82, 106, 247);
+    border-left: 4px solid rgb(82, 106, 247);
+    transition: color 0.1s ease; 
+}
+
+.navLenke:hover {
+    color: rgb(28, 28, 65);
+    font-size: 1.5rem;
+    transition:  0.2s ease;
+
+}
+
+#logolenke > *{
+    transition: transform 0.5s ease;
+}
+
+#logolenke:hover > * {
+    transition: transform 0.5s ease;
+    transform: scale(-1,1);
+}
+
+
+
+header > {
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+nav a{
+    color: aliceblue;
+}
+
+footer{
+    background-color: rgb(28, 28, 65);
+
+    height: 200px;
+    width:100%;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    bottom: 0px;
+}
+
+.footerEl{
+    text-align: left;
+    height: 30px;
+    
+}
+
+.footerLenke{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.inverter{
+    filter: invert(1);
+}
+/*for bilde av instagram ikon*/
+.footerLenke > *:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+
+} 
+/*andre lenker*/
+.footerLenke:hover{
+    font-size: 1.2rem;
+    transition: 0.3s; 
+}
+
+@media(max-width: 1200px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:900px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px){
+    #navbar{
+        flex-direction: column;
+        height: 150px;
+    }
+    #navbar > * {
+        width: 100%;
+    }
+}
+

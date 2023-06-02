@@ -1,0 +1,19 @@
+#hoved {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#hoved > *{
+    width: 50%;
+}
+
+#hovedBilde{
+    width:99vw
+}
+

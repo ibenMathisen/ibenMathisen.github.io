@@ -1,0 +1,43 @@
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ArtikkelOmrade{
+    margin: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto(1fr,2);
+    grid-template-rows: 300px, 200px, 300px;
+    grid-template-areas: "oh ov"
+                         "m m"
+                         "nh nv";
+
+}
+
+.ArtikkelOmrade > * {
+    max-width: 100%;
+}
+
+.OverstHoyre{
+    grid-area: oh;
+    margin: 20px;
+}
+
+.Midten{
+    grid-area: m;
+    margin: 60px;
+}
+
+.NederstVenstre{
+    grid-area: nv;
+    margin: 20px;
+}
+
+.eksterneLenker{
+    color: rgb(99, 121, 247)
+}
+
